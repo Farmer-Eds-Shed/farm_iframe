@@ -1,24 +1,24 @@
 <?php
  
-namespace Drupal\farm_grafana_integration\Plugin\Field\FieldType;
+namespace Drupal\farm_iframe\Plugin\Field\FieldType;
  
 use Drupal\Core\Field\FieldItemBase;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
 use Drupal\Core\TypedData\DataDefinition;
  
 /**
- * Plugin implementation of the 'grafana_integration' field type.
+ * Plugin implementation of the 'iFrame' field type.
  *
  * @FieldType(
- *   id = "grafana_integration",
- *   label = @Translation("Embed Grafana Panel"),
- *   module = "grafana_integration",
- *   description = @Translation("Show a panel from a Grafana instance"),
- *   default_widget = "grafana_integration",
- *   default_formatter = "grafana_integration_panel"
+ *   id = "iframe",
+ *   label = @Translation("Embed iframe Panel"),
+ *   module = "iframe",
+ *   description = @Translation("Show a panel from a iframe instance"),
+ *   default_widget = "iframe",
+ *   default_formatter = "iframe_panel"
  * )
  */
-class GrafanaIntegrationItem extends FieldItemBase {
+class IframeItem extends FieldItemBase {
   /**
    * {@inheritdoc}
    */
@@ -47,7 +47,7 @@ class GrafanaIntegrationItem extends FieldItemBase {
    */
   public static function propertyDefinitions(FieldStorageDefinitionInterface $field_definition) {
     $properties['value'] = DataDefinition::create('string')
-      ->setLabel(t('Grafana Panel URL'));
+      ->setLabel(t('iFrame URL'));
  
     return $properties;
   }

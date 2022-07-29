@@ -5,18 +5,27 @@ use Drupal\Core\Field\BaseFieldDefinition;
 
 /**
  * @file
- * Module file for grafana intergration
+ * Module file for iFrame module
  */
 
 /**
  * Implements hook_theme().
  */
-function farm_grafana_integration_theme() {
+function farm_iframe_theme() {
   return array(
-    'grafana_integration_panel_formatter' => array(
+    'farm_iframe_panel_formatter' => array(
       'variables' => array('url' => NULL),
     ),
-    'grafana_integration_full_view' => array(
+    'farm_iframe_full_view_1' => array(
+      'variables' => array('url' => NULL),
+    ),
+	'farm_iframe_full_view_2' => array(
+      'variables' => array('url' => NULL),
+    ),
+	'farm_iframe_full_view_3' => array(
+      'variables' => array('url' => NULL),
+    ),
+	'farm_iframe_full_view_4' => array(
       'variables' => array('url' => NULL),
     ),
   );
@@ -25,19 +34,19 @@ function farm_grafana_integration_theme() {
 /**
  * Implements hook_entity_base_field_info().
  */
-function farm_grafana_integration_entity_base_field_info(EntityTypeInterface $entity_type) {
+function farm_iframe_entity_base_field_info(EntityTypeInterface $entity_type) {
   if ($entity_type->id() === 'asset') {
-    $fields['grafana_panel_link'] = BaseFieldDefinition::create('grafana_integration')
-    ->setLabel(t('Grafana Panel Link'))
-    ->setDescription(t('Option to add a Grafana Panel'))
+    $fields['iframe_panel_link'] = BaseFieldDefinition::create('iframe')
+    ->setLabel(t('iFrame Panel'))
+    ->setDescription(t('Option to add an iFrame Panel'))
     ->setRevisionable(TRUE);
 
-    $fields['grafana_panel_link']->setDisplayOptions('form', [
+    $fields['iframe_panel_link']->setDisplayOptions('form', [
       'type' => 'options_buttons',
       'weight' => $options['weight']['form'] ?? 0,
     ]);
 
-    $fields['grafana_panel_link']->setDisplayOptions('view', [
+    $fields['iframe_panel_link']->setDisplayOptions('view', [
       'label' => 'inline',
       'type' => 'list_default',
       'weight' => $options['weight']['view'] ?? 0,
@@ -47,9 +56,4 @@ function farm_grafana_integration_entity_base_field_info(EntityTypeInterface $en
  }
 }
 
-/**
- * Implements hook_preprocess_HOOK().
- */
-function farm_grafana_integration_preprocess_toolbar(&$variables) {
-  $variables['#attached']['library'][] = 'farm_grafana_integration/grafana_toolbar';
-}
+

@@ -1,23 +1,23 @@
 <?php
 
-namespace Drupal\farm_grafana_integration\Plugin\Field\FieldFormatter;
+namespace Drupal\farm_iframe\Plugin\Field\FieldFormatter;
 
 use Drupal\Core\Field\FormatterBase;
 use Drupal\Core\Field\FieldItemListInterface;
 
 /**
- * Plugin implementation of the 'grafana_integration_panel' formatter.
+ * Plugin implementation of the 'iframe_panel' formatter.
  *
  * @FieldFormatter(
- *   id = "grafana_integration_panel",
- *   module = "grafana_integration",
- *   label = @Translation("Displays Grafana Panel"),
+ *   id = "iframe_panel",
+ *   module = "farm_iframe",
+ *   label = @Translation("Displays iframe Panel"),
  *   field_types = {
- *     "grafana_integration"
+ *     "farm_iframe"
  *   }
  * )
  */
-class GrafanaIntegrationPanelFormatter extends FormatterBase {
+class IframePanelFormatter extends FormatterBase {
 
   /**
    * {@inheritdoc}
@@ -27,7 +27,7 @@ class GrafanaIntegrationPanelFormatter extends FormatterBase {
 
     foreach ($items as $delta => $item) {
         $elements[$delta] = array(
-          '#theme' => 'grafana_integration_panel_formatter',
+          '#theme' => 'farm_iframe_panel_formatter',
           '#url' => $item->value
         );
 

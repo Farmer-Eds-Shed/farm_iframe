@@ -1,24 +1,24 @@
 <?php
  
-namespace Drupal\farm_grafana_integration\Plugin\Field\FieldWidget;
+namespace Drupal\farm_iframe\Plugin\Field\FieldWidget;
  
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Field\WidgetBase;
 use Drupal\Core\Form\FormStateInterface;
  
 /**
- * Plugin implementation of the 'grafana_integration' widget.
+ * Plugin implementation of the 'iframe' widget.
  *
  * @FieldWidget(
- *   id = "grafana_integration",
- *   module = "grafana_integration",
- *   label = @Translation("Grafana Panel URL"),
+ *   id = "iframe",
+ *   module = "iframe",
+ *   label = @Translation("iFrame Panel URL"),
  *   field_types = {
- *     "grafana_integration"
+ *     "iFrame"
  *   }
  * )
  */
-class GrafanaIntegrationWidget extends WidgetBase {
+class IframeWidget extends WidgetBase {
  
   /**
    * {@inheritdoc}

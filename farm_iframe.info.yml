@@ -1,6 +1,6 @@
-name: farmOS Grafana Integration
+name: farmOS iFrame Module
 type: module
-description: Embeds a grafana instance in farmOS
+description: Embeds iFrames in farmOS
 core_version_requirement: ^9
 package: farmOS Contrib
 dependencies:
