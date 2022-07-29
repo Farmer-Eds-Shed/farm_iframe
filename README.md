@@ -52,6 +52,7 @@ Otherwise Grafana would not load up. Also worth mentioning is: My farmOS and Gra
 Special Thanks go out to:
 - Michael Stenta - https://github.com/mstenta
 - Paul Weidner - https://github.com/paul121
+- Jan Sonntag - https://github.com/SirSundays
 
 
-** This module is mostly a re-branding of SirSundays/farm_grafana_integration**
+** This module is mostly a re-branding of SirSundays/farm_grafana_integration as a more generic iframes module**
