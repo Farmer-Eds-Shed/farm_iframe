@@ -26,7 +26,7 @@ class FarmIframeController extends ControllerBase {
     $iframe_2_url = \Drupal::config('farm_iframe.settings')->get('iframe_2_url');
 
     $build = [
-      '#theme' => 'farm_iframe_full_view_2',
+      '#theme' => 'farm_iframe_full_view_1',
       '#url' => $iframe_2_url
     ];
     return $build;
@@ -36,7 +36,7 @@ class FarmIframeController extends ControllerBase {
     $iframe_3_url = \Drupal::config('farm_iframe.settings')->get('iframe_3_url');
 
     $build = [
-      '#theme' => 'farm_iframe_full_view_3',
+      '#theme' => 'farm_iframe_full_view_1',
       '#url' => $iframe_3_url
     ];
     return $build;
@@ -46,7 +46,7 @@ class FarmIframeController extends ControllerBase {
     $iframe_4_url = \Drupal::config('farm_iframe.settings')->get('iframe_4_url');
 
     $build = [
-      '#theme' => 'farm_iframe_full_view_4',
+      '#theme' => 'farm_iframe_full_view_1',
       '#url' => $iframe_4_url
     ];
     return $build;
