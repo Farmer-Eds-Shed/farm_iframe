@@ -55,4 +55,4 @@ Special Thanks go out to:
 - Jan Sonntag - https://github.com/SirSundays
 
 
-** This module is mostly a re-branding of SirSundays/farm_grafana_integration as a more generic iframes module**
+** This module is an adaption of SirSundays/farm_grafana_integration as a more generic iframes module**
