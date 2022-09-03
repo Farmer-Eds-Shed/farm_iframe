@@ -6,4 +6,12 @@ farm_iframe.settings:
     iframe_1_url:
       type: string
       label: 'Iframe 1 Url'
-
+    iframe_2_url:
+      type: string
+      label: 'Iframe 2 Url'
+    iframe_3_url:
+      type: string
+      label: 'Iframe 1 Url'
+    iframe_4_url:
+      type: string
+      label: 'Iframe 2 Url
