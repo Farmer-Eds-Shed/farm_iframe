@@ -1,0 +1,18 @@
+{
+    "name": "farmer-eds-shed/farm_iframe",
+    "description": "Provides iframes for farmOS.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Farmer Ed",
+            "email": "farmer.eds.shed@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Farmer-Eds-Shed/farm_iframe.git"
+        }
+    ]
+}
