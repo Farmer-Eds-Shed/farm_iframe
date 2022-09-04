@@ -1,32 +1,17 @@
-farm_iframe.full_view_1:
-  path: '/iframe_1' 
+farm_iframe.full_view:
+  path: '/iframe/{iframe}' 
   defaults: 
-    _controller: '\Drupal\farm_iframe\Controller\FarmIframeController::fullView1' 
+    _controller: '\Drupal\farm_iframe\Controller\FarmIframeController::fullView' 
   requirements: 
     _permission: 'access content'
     
-farm_iframe.full_view_2:
-  path: '/iframe_2' 
+farm_iframe.menu:
+  path: '/iframe' 
   defaults: 
-    _controller: '\Drupal\farm_iframe\Controller\FarmIframeController::fullView2' 
-  requirements: 
-    _permission: 'access content'
-
-farm_iframe.full_view_3:
-  path: '/iframe_3' 
-  defaults: 
-    _controller: '\Drupal\farm_iframe\Controller\FarmIframeController::fullView3' 
+    _controller: '\Drupal\farm_iframe\Controller\FarmIframeController::index' 
   requirements: 
     _permission: 'access content'
     
-farm_iframe.full_view_4:
-  path: '/iframe_4' 
-  defaults: 
-    _controller: '\Drupal\farm_iframe\Controller\FarmIframeController::fullView4' 
-  requirements: 
-    _permission: 'access content'
-
-
 farm_iframe.settings:
   path: '/farm/settings/iframe'
   defaults:

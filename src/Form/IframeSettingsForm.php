@@ -40,10 +40,10 @@ class IframeSettingsForm extends ConfigFormbase {
     $config = $this->config(static::SETTINGS);
 
     // Add the iframe_url option.
-    $form['iframe_1_url'] = [
+    $form['iframe1'] = [
       '#type' => 'url',
       '#title' => $this->t('iFrame 1 URL'),
-      '#default_value' => $config->get('iframe_1_url'),
+      '#default_value' => $config->get('iframe1'),
     ];
 	
     // Add the custom Title option.
@@ -62,10 +62,10 @@ class IframeSettingsForm extends ConfigFormbase {
 	 ];
 	
     // Add the iframe_url option.
-    $form['iframe_2_url'] = [
+    $form['iframe2'] = [
       '#type' => 'url',
       '#title' => $this->t('iFrame 2 URL'),
-      '#default_value' => $config->get('iframe_2_url'),
+      '#default_value' => $config->get('iframe2'),
     ];
 	
     // Add the custom Title option.
@@ -84,10 +84,10 @@ class IframeSettingsForm extends ConfigFormbase {
 	 ];
 	 
     // Add the iframe_url option.
-    $form['iframe_3_url'] = [
+    $form['iframe3'] = [
       '#type' => 'url',
       '#title' => $this->t('iFrame 3 URL'),
-      '#default_value' => $config->get('iframe_3_url'),
+      '#default_value' => $config->get('iframe3'),
     ];
 	
     // Add the custom Title option.
@@ -106,10 +106,10 @@ class IframeSettingsForm extends ConfigFormbase {
 	 ];
 	
     // Add the iframe_url option.
-    $form['iframe_4_url'] = [
+    $form['iframe4'] = [
       '#type' => 'url',
       '#title' => $this->t('iFrame 4 URL'),
-      '#default_value' => $config->get('iframe_4_url'),
+      '#default_value' => $config->get('iframe4'),
     ];
 	
     // Add the custom Title option.
@@ -135,10 +135,10 @@ class IframeSettingsForm extends ConfigFormbase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $this->configFactory->getEditable(static::SETTINGS)
-      ->set('iframe_1_url', $form_state->getValue('iframe_1_url'))
-      ->set('iframe_2_url', $form_state->getValue('iframe_2_url'))
-      ->set('iframe_3_url', $form_state->getValue('iframe_3_url'))
-      ->set('iframe_4_url', $form_state->getValue('iframe_4_url'))
+      ->set('iframe1', $form_state->getValue('iframe1'))
+      ->set('iframe2', $form_state->getValue('iframe2'))
+      ->set('iframe3', $form_state->getValue('iframe3'))
+      ->set('iframe4', $form_state->getValue('iframe4'))
 	  
 	  ->set('iframe_1_title', $form_state->getValue('iframe_1_title'))
       ->set('iframe_2_title', $form_state->getValue('iframe_2_title'))

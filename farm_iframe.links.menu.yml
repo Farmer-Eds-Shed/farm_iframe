@@ -1,27 +1,37 @@
+farm.iframe_menu:
+  title: iFrames
+  parent: farm.base
+  route_name: farm_iframe.menu
+  weight: 100
+
 farm.iframe_full_view_1:
   title: iFrame_1
-  parent: farm.base
-  route_name: farm_iframe.full_view_1
+  parent: farm.iframe_menu
+  route_name: farm_iframe.full_view
+  route_parameters: { iframe: 'iframe1' }
   weight: 100
   class: Drupal\farm_iframe\Plugin\Menu\FullView1MenuLink
   
 farm.iframe_full_view_2:
   title: iFrame_2
-  parent: farm.base
-  route_name: farm_iframe.full_view_2
+  parent: farm.iframe_menu
+  route_name: farm_iframe.full_view
+  route_parameters: { iframe: 'iframe2' }
   weight: 100
   class: Drupal\farm_iframe\Plugin\Menu\FullView2MenuLink
 
 farm.iframe_full_view_3:
   title: iFrame_3
-  parent: farm.base
-  route_name: farm_iframe.full_view_3
+  parent: farm.iframe_menu
+  route_name: farm_iframe.full_view
+  route_parameters: { iframe: 'iframe3' }
   weight: 100
   class: Drupal\farm_iframe\Plugin\Menu\FullView3MenuLink
   
 farm.iframe_full_view_4:
   title: iFrame_4
-  parent: farm.base
-  route_name: farm_iframe.full_view_4
+  parent: farm.iframe_menu
+  route_name: farm_iframe.full_view
+  route_parameters: { iframe: 'iframe4' }
   weight: 100
   class: Drupal\farm_iframe\Plugin\Menu\FullView4MenuLink
